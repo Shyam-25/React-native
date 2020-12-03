@@ -58,7 +58,7 @@ export default class App extends React.Component {
             <Text style={styles.title}>{item.name}</Text>
             <Text style={styles.content}>{item.content}</Text>
             <Text style={styles.time}>{item.time}</Text>
-            <Image source={{uri:item.Uri}} style={styles.imageInputContainer}/>  
+            
         </View>
       </View>
     )
@@ -68,7 +68,7 @@ export default class App extends React.Component {
     return (
       <View >
         <FlatList
-          data={this.state.items}
+          data={this.state.data}
           renderItem={this.renderRow}
         />
       </View>
@@ -95,15 +95,7 @@ const styles=StyleSheet.create({
     borderRadius:50,
     marginTop:10,
   },
-  imageInputContainer:{
-    width:50, 
-    height:50,
-    padding:10,
-    borderRadius:50,
-    marginTop:10,
-    alignSelf: 'flex-end',
-    justifyContent: 'flex-end'
-  },
+ 
   textContainer:{
     paddingLeft:10,
     paddingRight:100,
