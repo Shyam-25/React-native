@@ -127,9 +127,9 @@ export default class App extends React.Component {
   }
   onendReached=()=>{         
     console.log(this.state.firstdata.length)
-    if(this.state.firstdata.length<this.state.Seconddata.length+5){
+    if(this.state.firstdata.length<this.state.Seconddata.length+4){
       this.setState({
-          firstdata:this.state.firstdata.concat(this.state.Seconddata.slice(this.state.firstdata.length-6,this.state.firstdata.length-1))
+          firstdata:this.state.firstdata.concat(this.state.Seconddata.slice(this.state.firstdata.length-5,this.state.firstdata.length-1))
         })
       } 
   }
