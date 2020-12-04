@@ -1,3 +1,3 @@
-# React-native
+# pagination
 
-![Screenshot (11)](https://user-images.githubusercontent.com/74527431/100963459-61d3f700-354c-11eb-9af9-1e7ab4fbd168.png)
+![Screenshot (23)](https://user-images.githubusercontent.com/74527431/101165723-25dc8700-365d-11eb-8e48-c9a910a2a98b.png)
