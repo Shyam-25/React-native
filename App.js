@@ -63,11 +63,14 @@ SectionListItems = ({ items }) =>(
       <Text style={styles.text}>  {items.value}</Text>
       <Text style={styles.days}>   {items.days}</Text>
       <Text style={styles.month}>  {items.month} {items.content} </Text>  
+   <View style={styles.imageHolder}>
+  <Image source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}}  style={styles.imageContainer}/>
+  
      
 
       
 
-      
+    </View>    
     </View>
   </View>
 );
@@ -120,6 +123,21 @@ const styles=StyleSheet.create({
     flexDirection:'column',
     fontStyle: 'italic',
    
+  },
+   imageHolder:{
+    alignContent:'center',
+    justifyContent:'center',
+    marginLeft:20,
+    // height:50
+  },
+  imageContainer:{
+    width:25,
+    height:25,
+    borderRadius:100,
+    alignSelf: 'flex-end',
+    // paddingTop: 50,
+    
+    
   },
   text:{
     
